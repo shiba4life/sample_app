@@ -11,13 +11,18 @@ group :production do
   #gem 'pg'
 end
 
-group :development do
-  gem 'rspec-rails', '2.0.1'
+group :test, :development do
+  gem 'rspec-rails'
+  gem "ZenTest"
+#  gem "autotest-rails-pure"
+  gem "autotest-growl"
+  gem "autotest-fsevent" #can't get fsevent to install
 end
 
 group :test do
-  gem 'rspec', '2.0.1'
-  gem 'webrat', '0.7.1'
+  gem 'rspec'
+  gem 'webrat'
+  gem 'spork'
 end
 
 # Gems used only for assets and not required
