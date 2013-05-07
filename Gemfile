@@ -32,6 +32,7 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'database_cleaner', '0.7.0'
   # System-dependent gems
 end
 
